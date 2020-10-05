@@ -98,14 +98,20 @@ def load_data(city, month, day):
     """
 
     df = pd.read_csv(CITY_DATA[city])
-    #convert to month text name from start date column
+
+    # convert to month text name from start date column
     df['Month_Name'] = pd.to_datetime(df['Start Time']).dt.strftime('%B').str.lower()
-    #convert to year from start time column
+
+    # convert to year from start time column
     df['Year']  = pd.to_datetime(df['Start Time']).dt.year
-    #convert to month int value for analytics from start time
+
+    # convert to month int value for analytics from start time
     df['month'] = pd.to_datetime(df['Start Time']).dt.month
-    #convert to weekday name from start time
+
+    # convert to weekday name from start time
     df['day_of_week'] = pd.to_datetime(df['Start Time']).dt.strftime('%A').str.lower()
+
+    # convert Start Time to a rounded hour
     df['start_hour_rounded'] = (pd.to_datetime(df['Start Time']).dt.round("H")).dt.strftime('%r')
 
     if month != 'all':
