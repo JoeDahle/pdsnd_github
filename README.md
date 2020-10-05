@@ -4,5 +4,14 @@ This project takes public bikeshare data and attempts to perform analytics on it
 
 ### To Run:
 
-1. Run bikeshare.py in a terminal window.
-2. Answer The questions as prompted, for randomized results just hit enter 3 times in a row.
+1. Obtain the datasets from Udacity for New York City, Chicago and Washington.
+2. Run bikeshare.py in a terminal window.
+3. Answer The questions as prompted, for randomized results just hit enter 3 times in a row.
+
+### Files
+
+```
+.
++-- bikeshare.py
++-- README.md
+```
