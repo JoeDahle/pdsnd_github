@@ -11,7 +11,7 @@ This project takes public bikeshare data and attempts to perform analytics on it
 ### Files
 
 ```
-.
 +-- bikeshare.py
 +-- README.md
++-- .gitignore do not track .csv files
 ```
